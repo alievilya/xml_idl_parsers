@@ -1,11 +1,10 @@
-
 def split_txtfile():
     count = 0
     with open('full.txt', 'r') as d:
-        strr = d.readlines()
+        stroka = d.readlines()
         with open('valid.txt', 'w+') as w:
             with open('train.txt', 'w+') as o:
-                for i in strr:
+                for i in stroka:
                     if count % 7 == 0:
                         w.write(i)
                     else:
